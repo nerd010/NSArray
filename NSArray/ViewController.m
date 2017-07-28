@@ -16,7 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSArray *arr = [[NSArray alloc] init];
+    NSArray *newArr = [NSArray array];
+    arr = @[@"1", @2, @"3"];
+    newArr = arr;
+    
+    for (NSString *str in arr)
+    {
+        if ([str isEqualToString:@"1"])
+        {
+            NSString *string = @"hello";
+//            str = string;
+        }
+    }
+    NSLog(@"arr:%@ newArr:%@", arr, newArr);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
